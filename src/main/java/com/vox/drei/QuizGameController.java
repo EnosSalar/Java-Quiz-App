@@ -75,6 +75,32 @@ public class QuizGameController {
         correctAnswerLabel.setVisible(false);
     }
 
+    private void checkAnswer() {
+        if (answerSubmitted) {
+            return;
+        }
+
+        Question currentQuestion = questions.get(currentQuestionIndex);
+        if (currentQuestion.getType().equals("MULTIPLE_CHOICE")) {
+            ToggleGroup group = ((RadioButton) answerGrid.getChildren().get(0)).getToggleGroup();
+            if (group.getSelectedToggle() != null) {
+                String selectedAnswer = (String) group.getSelectedToggle().getUserData();
+                currentQuestion.setUserAnswer(selectedAnswer);
+                if (currentQuestion.isCorrectAnswer(selectedAnswer)) {
+                    score++;
+                }
+            }
+        } else if (currentQuestion.getType().equals("IDENTIFICATION")) {
+            TextField answerField = (TextField) answerGrid.getChildren().get(0);
+            String userAnswer = answerField.getText().trim();
+            currentQuestion.setUserAnswer(userAnswer);
+            if (currentQuestion.isCorrectAnswer(userAnswer)) {
+                score++;
+            }
+        }
+        answerSubmitted = true;
+    }
+
 
     private void updateButtonVisibility() {
         if (submitAnswerButton != null) {
@@ -279,31 +305,7 @@ public class QuizGameController {
         }
     }
 
-    private void checkAnswer() {
-        if (answerSubmitted) {
-            return;
-        }
 
-        Question currentQuestion = questions.get(currentQuestionIndex);
-        if (currentQuestion.getType().equals("MULTIPLE_CHOICE")) {
-            ToggleGroup group = ((RadioButton) answerGrid.getChildren().get(0)).getToggleGroup();
-            if (group.getSelectedToggle() != null) {
-                String selectedAnswer = (String) group.getSelectedToggle().getUserData();
-                currentQuestion.setUserAnswer(selectedAnswer);
-                if (currentQuestion.isCorrectAnswer(selectedAnswer)) {
-                    score++;
-                }
-            }
-        } else if (currentQuestion.getType().equals("IDENTIFICATION")) {
-            TextField answerField = (TextField) answerGrid.getChildren().get(0);
-            String userAnswer = answerField.getText().trim();
-            currentQuestion.setUserAnswer(userAnswer);
-            if (currentQuestion.isCorrectAnswer(userAnswer)) {
-                score++;
-            }
-        }
-        answerSubmitted = true;
-    }
 
     private void finishQuiz() {
         if (timer != null) {
