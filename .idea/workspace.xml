@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55fc9eff-590e-4142-ae36-479987bf3475" name="Changes" comment="System Update/Improvement&#10;Minor Cleaning">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/vox/drei/AddQuestionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/vox/drei/RemoveQuestionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vox/drei/QuizTestSuite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vox/drei/AddQuestionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vox/drei/AddQuestionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vox/drei/RemoveQuestionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vox/drei/RemoveQuestionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +67,11 @@
   "keyToString": {
     "Application.DreiMain.executor": "Run",
     "JUnit.AddQuestionTest.addQuestion.executor": "Run",
+    "JUnit.QuizTestSuite.executor": "Run",
+    "JUnit.RemoveQuestionTest.removeQuestion.executor": "Run",
+    "JUnit.TestSuite.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
@@ -98,7 +104,7 @@
       <recent name="com.vox.drei" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AddQuestionTest.addQuestion">
+  <component name="RunManager" selected="JUnit.QuizTestSuite">
     <configuration name="DreiMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.vox.drei.DreiMain" />
       <module name="drei" />
@@ -128,6 +134,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="QuizTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="drei" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vox.drei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vox.drei" />
+      <option name="MAIN_CLASS_NAME" value="com.vox.drei.QuizTestSuite" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RemoveQuestionTest.removeQuestion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="drei" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vox.drei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vox.drei" />
+      <option name="MAIN_CLASS_NAME" value="com.vox.drei.RemoveQuestionTest" />
+      <option name="METHOD_NAME" value="removeQuestion" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="dreizel" />
       <method v="2">
@@ -143,6 +180,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QuizTestSuite" />
+        <item itemvalue="JUnit.RemoveQuestionTest.removeQuestion" />
         <item itemvalue="JUnit.AddQuestionTest.addQuestion" />
         <item itemvalue="Application.DreiMain" />
       </list>
@@ -151,8 +190,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
       </set>
     </attachedChunks>
   </component>
@@ -171,6 +210,7 @@
       <workItem from="1728722834874" duration="701000" />
       <workItem from="1728778705281" duration="21932000" />
       <workItem from="1733647006077" duration="5274000" />
+      <workItem from="1733750562451" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Quiz System">
       <option name="closed" value="true" />

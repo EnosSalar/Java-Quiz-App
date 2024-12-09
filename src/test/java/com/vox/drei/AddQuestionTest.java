@@ -1,9 +1,7 @@
 package com.vox.drei;
 
 import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AddQuestionTest {
@@ -19,9 +17,9 @@ public class AddQuestionTest {
                 "6", "MULTIPLE_CHOICE"
         );
         Question question2 = new Question(
-                "What is the capital of Iraq?",
-                Arrays.asList("Berlin", "Baghdad", "Madrid", "Moscow"),
-                "Baghdad", "MULTIPLE_CHOICE"
+                "What is 9 * 9?",
+                Arrays.asList("99", "89", "81", "82"),
+                "81", "MULTIPLE_CHOICE"
         );
 
         quiz.addQuestion(question1);
