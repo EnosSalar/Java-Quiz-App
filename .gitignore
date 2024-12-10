@@ -40,3 +40,4 @@ build/
 .DS_Store
 /.idea/dataSources
 .idea/dataSources/fdc57c21-a645-40c3-b725-69b855f99b56.xml
+.idea/workspace.xml

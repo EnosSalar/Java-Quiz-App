@@ -66,6 +66,7 @@
     "JUnit.ClearQuestionTest.executor": "Run",
     "JUnit.GetQuestionByNumberTest.executor": "Run",
     "JUnit.QuizTestSuite.executor": "Run",
+    "JUnit.RemoveQuestionTest.executor": "Run",
     "JUnit.RemoveQuestionTest.removeQuestion.executor": "Run",
     "JUnit.TestSuite.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -227,7 +228,7 @@
       <workItem from="1733647006077" duration="5274000" />
       <workItem from="1733750562451" duration="11000" />
       <workItem from="1733750637478" duration="274000" />
-      <workItem from="1733811682830" duration="2712000" />
+      <workItem from="1733811682830" duration="3685000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Quiz System">
       <option name="closed" value="true" />
