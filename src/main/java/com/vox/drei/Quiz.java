@@ -48,4 +48,19 @@ public class Quiz {
             }
         }
     }
+
+    public void clearQuestions() {
+        questions.clear();
+    }
+
+    public Question getQuestionByNumber(int number) {
+        for (Question q : questions) {
+            if (q.getQuestionNumber() == number) {
+                return q;
+            }
+        }
+        return null;
+    }
+
+
 }
