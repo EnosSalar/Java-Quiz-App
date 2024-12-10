@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55fc9eff-590e-4142-ae36-479987bf3475" name="Changes" comment="System Update/Improvement&#10;Minor Cleaning">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/vox/drei/ClearQuestionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/vox/drei/GetQuestionByNumberTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vox/drei/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vox/drei/Quiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/vox/drei/QuizTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vox/drei/QuizTestSuite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +64,7 @@
   "keyToString": {
     "Application.DreiMain.executor": "Run",
     "JUnit.AddQuestionTest.addQuestion.executor": "Run",
+    "JUnit.ClearQuestionTest.executor": "Run",
     "JUnit.GetQuestionByNumberTest.executor": "Run",
     "JUnit.QuizTestSuite.executor": "Run",
     "JUnit.RemoveQuestionTest.removeQuestion.executor": "Run",
@@ -104,20 +103,7 @@
       <recent name="com.vox.drei" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GetQuestionByNumberTest">
-    <configuration name="DreiMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.vox.drei.DreiMain" />
-      <module name="drei" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.vox.drei.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.QuizTestSuite">
     <configuration name="AddQuestionTest.addQuestion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="drei" />
       <extension name="coverage">
@@ -130,6 +116,21 @@
       <option name="MAIN_CLASS_NAME" value="com.vox.drei.AddQuestionTest" />
       <option name="METHOD_NAME" value="addQuestion" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClearQuestionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="drei" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vox.drei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vox.drei" />
+      <option name="MAIN_CLASS_NAME" value="com.vox.drei.ClearQuestionTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -195,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GetQuestionByNumberTest" />
         <item itemvalue="JUnit.QuizTestSuite" />
+        <item itemvalue="JUnit.ClearQuestionTest" />
+        <item itemvalue="JUnit.GetQuestionByNumberTest" />
         <item itemvalue="JUnit.RemoveQuestionTest.removeQuestion" />
         <item itemvalue="JUnit.AddQuestionTest.addQuestion" />
-        <item itemvalue="Application.DreiMain" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +229,7 @@
       <workItem from="1733647006077" duration="5274000" />
       <workItem from="1733750562451" duration="11000" />
       <workItem from="1733750637478" duration="274000" />
-      <workItem from="1733811682830" duration="1408000" />
+      <workItem from="1733811682830" duration="1720000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Quiz System">
       <option name="closed" value="true" />
